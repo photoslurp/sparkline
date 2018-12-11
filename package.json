@@ -23,6 +23,6 @@
     "@babel/runtime": "^7.2.0",
     "jsdom": "^13.0.0",
     "mocha": "^5.2.0",
-    "snap-shot": "2.17.x"
+    "snap-shot-it": "^6.2.7"
   }
 }

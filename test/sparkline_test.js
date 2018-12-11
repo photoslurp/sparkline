@@ -1,5 +1,5 @@
 import assert from "assert";
-import snapshot from "snap-shot";
+import snapshot from "snap-shot-it";
 import { JSDOM } from "jsdom";
 import {describe, it} from "mocha";
 
