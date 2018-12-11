@@ -3,16 +3,11 @@
   "version": "0.3.10",
   "files": [
     "src/sparkline.js",
-    "dist/**/*",
     "README.md"
   ],
-  "main": "dist/sparkline.js",
-  "module": "dist/sparkline.commonjs2.js",
+  "main": "src/sparkline.js",
   "scripts": {
-    "test": "mocha --require @babel/register \"test/**/*_test.js\"",
-    "js:dist:commonjs2": "LIBRARY_TARGET=commonjs2 webpack",
-    "js:dist:browser": "LIBRARY_TARGET=var webpack",
-    "dist": "rm -rf dist/* && yarn test && yarn js:dist:browser && yarn js:dist:commonjs2"
+    "test": "mocha --require @babel/register \"test/**/*_test.js\""
   },
   "description": "Generate SVG sparklines with JavaScript without any external dependency.",
   "license": "MIT",
@@ -26,12 +21,8 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.2.0",
-    "babel-loader": "8.0.x",
     "jsdom": "^13.0.0",
     "mocha": "^5.2.0",
-    "snap-shot": "2.17.x",
-    "uglifyjs-webpack-plugin": "2.0.x",
-    "webpack": "^4.27.1",
-    "webpack-cli": "3.1.x"
+    "snap-shot": "2.17.x"
   }
 }
